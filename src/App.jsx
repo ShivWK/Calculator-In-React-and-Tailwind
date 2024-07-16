@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CalHeader from './Components/CalHaeder';
 import ColorContext from './Components/Context';
 import CalDisplay from './Components/CalDisplay';
+import Keybord from './Components/Keybord';
 export default function () {
 
   const [bgColor , setBgColor] = useState('hsl(222, 26%, 31%)');
@@ -25,7 +26,8 @@ export default function () {
 
       <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] px-2 py-2 md:w-[30%] w-10/12 h-5/6 rounded-lg">
         <CalHeader backgroundclr={bgcolorhandler}/>
-        <CalDisplay dispColor={dispColor}></CalDisplay>
+        <CalDisplay dispColor={dispColor}/>
+        <Keybord/>
       </div>
     </div>
     </ColorContext.Provider>

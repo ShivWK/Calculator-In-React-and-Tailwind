@@ -8,7 +8,7 @@ export default function CalDisplay(props){
         <div className='w-full my-4 h-24 rounded-lg flex items-center pt-1 px-4 text-4xl overflow-auto justify-end' style={{backgroundColor: props.dispColor,
             color: context.textColor
         }}>
-            542654*djdd
+            WINNER
         </div>
     )
 }

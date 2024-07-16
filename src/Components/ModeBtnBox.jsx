@@ -31,9 +31,9 @@ export default function ModeBtnBox(){
     return(
         <div className='modeBtn flex flex-col'>
             <div className='number flex gap-3 justify-center'>
-              <span className='text-sm' style={{color : context.textColor}}>1</span>
-              <span className='text-sm' style={{color : context.textColor}}>2</span>
-              <span className='text-sm' style={{color : context.textColor}}>3</span>
+              <span className='text-xs' style={{color : context.textColor}}>1</span>
+              <span className='text-xs' style={{color : context.textColor}}>2</span>
+              <span className='text-xs' style={{color : context.textColor}}>3</span>
             </div>
             <div className='flex justify-between rounded-full p-1 w-14 h-5' style={{backgroundColor : context.tglkbdbg}}>
               <Button clickHandler={handleClickTheme1} isActive = {buttonIndex === 1} btncolor={'rgb(208,63,47)'}></Button>
