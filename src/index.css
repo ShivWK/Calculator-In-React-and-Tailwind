@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.active-btn{
-    @apply rounded-full w-3 h-3 bg-orange-700;
-}
-
 /* body{
-    color:  rgb(202, 85, 2)
+    color:    rgb(255, 229, 61)
 } */

@@ -1,42 +1,33 @@
 import React, { useState } from 'react';
+import CalHeader from './Components/CalHaeder';
+import ColorContext from './Components/Context';
+import CalDisplay from './Components/CalDisplay';
+export default function () {
 
-export default function(){
-  let [buttonIndex, setButtonIndex] = useState(null);
+  const [bgColor , setBgColor] = useState('hsl(222, 26%, 31%)');
+  let [textColor, setTextColor] = useState('white');
+  let [dispColor, setDispColor] = useState('hsl(224, 36%, 15%)');
+  let [tglkbdbg, setTglKbdBg] = useState('hsl(223, 31%, 20%)');
 
-  function handleClickTheme1(){
-    setButtonIndex(1);
-  } 
+  
+  const textColorHandler = (clr) => {
+    setTextColor(clr);
+  }
+  const bgcolorhandler = (clr)=>{
+    setBgColor(clr)
+  }
 
-  function handleClickTheme2(){
-    setButtonIndex(2);
-  } 
+  return (
+    <ColorContext.Provider value={{bgColor : setBgColor, textColorHandler : textColorHandler, textColor : textColor , dispColor: setDispColor, tglkbdbg : tglkbdbg, tglkbdbgHandler : setTglKbdBg}}>
+    <div className='main w-full h-screen' style={{backgroundColor : bgColor}}>
 
-  function handleClickTheme3(){
-    setButtonIndex(3);
-  } 
+      {/* The issue with your code is in the way you are trying to use the bgColor state variable within the className attribute of the div. Tailwind CSS does not support dynamic class names directly within the template string. Instead, you should apply the background color style inline using the style attribute. */}
 
-  return(
-    <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] px-2 py-2 md:w-[30%] w-10/12 h-5/6 border-2 rounded-lg">
-      <div className='modeBox flex items-center justify-between w-full'> 
-        <span className='text-3xl pt-2'>clac</span>
-        <div className='flex items-center gap-5'>
-          <span className='text-sm flex h-full pt-6 items-end'>THEME</span>
-            <div className='modeBtn flex flex-col'>
-              <div className='number flex gap-3 justify-center'>
-                <span className='text-sm'>1</span>
-                <span className='text-sm'>2</span>
-                <span className='text-sm'>3</span>
-              </div>
-              <div className='flex justify-between rounded-full p-1 bg-slate-600 w-14 h-5'>
-                <button onClick={handleClickTheme1} className={`w-3 h-3 transition-all duration-200 ${buttonIndex === 1 ? 'rounded-full bg-[rgb(202,85,2)]' : ''}`}></button>
-                <button onClick={handleClickTheme2} className={`w-3 h-3 transition-all duration-200 ${buttonIndex === 2 ? 'rounded-full bg-[rgb(202,85,2)]' : ''}`}></button>
-                <button onClick={handleClickTheme3} className={`w-3 h-3 transition-all duration-200 ${buttonIndex === 3 ? 'rounded-full bg-[rgb(202,85,2)]' : ''}`}></button>
-              </div>
-            </div>
-            {/* active:rounded-full w-3 h-3 avtive:bg-orange-700 */}
-          </div>
-        </div>
-        
+      <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] px-2 py-2 md:w-[30%] w-10/12 h-5/6 rounded-lg">
+        <CalHeader backgroundclr={bgcolorhandler}/>
+        <CalDisplay dispColor={dispColor}></CalDisplay>
+      </div>
     </div>
+    </ColorContext.Provider>
   )
-}``
+} 
