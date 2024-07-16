@@ -8,7 +8,7 @@ export default function ModeBtnBox(){
 
     function handleClickTheme1(){
         setButtonIndex(1);
-        context.bgColor('rgb(24,32,52)');
+        context.bgColor('hsl(222, 26%, 31%)');
         context.textColorHandler('white');
         context.dispColor('hsl(224, 36%, 15%)');
         context.tglkbdbgHandler('hsl(223, 31%, 20%)');
