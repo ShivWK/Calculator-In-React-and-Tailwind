@@ -6,7 +6,7 @@ export default function Keybord() {
     let context = useContext(ColorContext);
 
     return (
-        <div className='w-full h-fit rounded-lg flex flex-wrap p-5 md:gap-[0.97rem]  gap-[1rem]' style={{backgroundColor : context.tglkbdbg, }}>   
+        <div className='w-full h-fit rounded-lg flex flex-wrap p-5 pb-6 md:gap-[0.97rem]  gap-[1rem]' style={{backgroundColor : context.tglkbdbg, }}>   
             <KBDButtons customClass={'width-4-5-rem'}>1</KBDButtons>
             <KBDButtons customClass={'width-4-5-rem'}>2</KBDButtons>
             <KBDButtons customClass={'width-4-5-rem'}>3</KBDButtons>
