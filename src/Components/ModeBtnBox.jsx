@@ -35,7 +35,7 @@ export default function ModeBtnBox(){
               <span className='text-xs' style={{color : context.textColor}}>2</span>
               <span className='text-xs' style={{color : context.textColor}}>3</span>
             </div>
-            <div className='flex justify-between rounded-full p-1 w-14 h-5' style={{backgroundColor : context.tglkbdbg}}>
+            <div className='flex justify-between items-center rounded-full p-1 w-14 h-6' style={{backgroundColor : context.tglkbdbg}}>
               <Button clickHandler={handleClickTheme1} isActive = {buttonIndex === 1} btncolor={'rgb(208,63,47)'}></Button>
               <Button clickHandler={handleClickTheme2} isActive = {buttonIndex === 2} btncolor={'rgb(202,85,2)'}></Button>
               <Button clickHandler={handleClickTheme3} isActive = {buttonIndex === 3} btncolor={'rgb(0,224,209)'}></Button>
