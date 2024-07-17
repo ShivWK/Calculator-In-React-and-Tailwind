@@ -1,30 +1,30 @@
 import React, {useContext} from 'react';
 import ColorContext from './Context';
-import KBDButtons from './KBDButtons';
+import KBDButtons from './KBDButtons/KBDButtons';
 
 export default function Keybord() {
     let context = useContext(ColorContext);
 
     return (
-        <div className='w-full h-[22rem] rounded-lg flex flex-wrap p-5 gap-[0.97rem] ' style={{backgroundColor : context.tglkbdbg, }}>   
-            <KBDButtons width={'4.5rem'}>1</KBDButtons>
-            <KBDButtons width={'4.5rem'}>2</KBDButtons>
-            <KBDButtons width={'4.5rem'}>3</KBDButtons>
-            <KBDButtons width={'4.5rem'}>DEL</KBDButtons>
-            <KBDButtons width={'4.5rem'}>4</KBDButtons>
-            <KBDButtons width={'4.5rem'}>5</KBDButtons>
-            <KBDButtons width={'4.5rem'}>6</KBDButtons>
-            <KBDButtons width={'4.5rem'}>+</KBDButtons>
-            <KBDButtons width={'4.5rem'}>7</KBDButtons>
-            <KBDButtons width={'4.5rem'}>8</KBDButtons>
-            <KBDButtons width={'4.5rem'}>9</KBDButtons>
-            <KBDButtons width={'4.5rem'}>-</KBDButtons>
-            <KBDButtons width={'4.5rem'}>1</KBDButtons>
-            <KBDButtons width={'4.5rem'}>1</KBDButtons>
-            <KBDButtons width={'4.5rem'}>1</KBDButtons>
-            <KBDButtons width={'4.5rem'}>x</KBDButtons> 
-            <KBDButtons width={'9.9rem'}>RESET</KBDButtons>
-            <KBDButtons width={'9.9rem'}>=</KBDButtons>
+        <div className='w-full h-fit rounded-lg flex flex-wrap p-5 md:gap-[0.97rem]  gap-[1.2rem]' style={{backgroundColor : context.tglkbdbg, }}>   
+            <KBDButtons customClass={'width-4-5-rem'}>1</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>2</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>3</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>DEL</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>4</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>5</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>6</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>+</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>7</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>8</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>9</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>-</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>1</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>1</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>1</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>x</KBDButtons> 
+            <KBDButtons customClass={'width-9-5-rem'}>RESET</KBDButtons>
+            <KBDButtons customClass={'width-9-5-rem'}>=</KBDButtons>
         </div>
     )
 
