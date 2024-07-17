@@ -6,7 +6,8 @@ export default function KBDButtons(props){
     let context = useContext(ColorContext);
 
     return (
-        <button className={`md:h-12 h-11 ${props.customClass} shrink  text-2xl border-b-[6px] rounded-lg flex items-center justify-center border-2`} style={{color: context.textColor}}>{props.children}</button>
+        <button className={`md:h-12 h-11 ${props.customClass} text-2xl shadow-sharp-shadow
+         rounded-lg flex items-center justify-center  active:translate-y-1 transition-all ${context.kbdbgColor} ${context.KbdkeytextColor} `} style={{boxShadow : `0 6px 0 0 ${context.shadowColor}`}}>{props.children}</button>
     )
 }
 

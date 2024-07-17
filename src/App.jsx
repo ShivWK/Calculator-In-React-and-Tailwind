@@ -9,6 +9,9 @@ export default function () {
   let [textColor, setTextColor] = useState('white');
   let [dispColor, setDispColor] = useState('hsl(224, 36%, 15%)');
   let [tglkbdbg, setTglKbdBg] = useState('hsl(223, 31%, 20%)');
+  let [kbdbgColor, setKbdBgColor] = useState('bg-[rgb(234,227,220)]');
+  let [KbdkeytextColor , setKbdkeytextColor] = useState('text-[rgb(53,53,44)]');
+  let [shadowColor , setShadowColor] = useState('rgb(180,165,151)')
 
   
   const textColorHandler = (clr) => {
@@ -19,7 +22,21 @@ export default function () {
   }
 
   return (
-    <ColorContext.Provider value={{bgColor : setBgColor, textColorHandler : textColorHandler, textColor : textColor , dispColor: setDispColor, tglkbdbg : tglkbdbg, tglkbdbgHandler : setTglKbdBg}}>
+    <ColorContext.Provider value={
+      {
+        bgColor : setBgColor, 
+        textColorHandler : textColorHandler, 
+        textColor : textColor , 
+        dispColor: setDispColor, 
+        tglkbdbg : tglkbdbg, 
+        tglkbdbgHandler : setTglKbdBg, 
+        kbdbgColor: kbdbgColor, 
+        setKbdbgColor: setKbdBgColor,
+        KbdkeytextColor : KbdkeytextColor,
+        setKbdkeytextColor : setKbdkeytextColor,
+        shadowColor : shadowColor,
+        setshadowColor : setShadowColor
+      }}>
     <div className='main w-full h-screen' style={{backgroundColor : bgColor}}>
 
       {/* The issue with your code is in the way you are trying to use the bgColor state variable within the className attribute of the div. Tailwind CSS does not support dynamic class names directly within the template string. Instead, you should apply the background color style inline using the style attribute. */}

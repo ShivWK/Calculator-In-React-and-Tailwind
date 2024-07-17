@@ -12,6 +12,9 @@ export default function ModeBtnBox(){
         context.textColorHandler('white');
         context.dispColor('hsl(224, 36%, 15%)');
         context.tglkbdbgHandler('hsl(223, 31%, 20%)');
+        context.setKbdbgColor('bg-[rgb(234,227,220)]');
+        context.setKbdkeytextColor('text-[rgb(53,53,44)]')
+        context.setshadowColor('rgb(180,165,151)')
     }
     function handleClickTheme2(){
         setButtonIndex(2);
@@ -19,13 +22,20 @@ export default function ModeBtnBox(){
         context.textColorHandler('rgb(27, 36, 40)');
         context.dispColor('hsl(0, 0%, 93%)');
         context.tglkbdbgHandler('hsl(0, 5%, 81%)');
+        context.setKbdbgColor('bg-[rgb(234,227,220)]');
+        context.setKbdkeytextColor('text-[rgb(53,53,44)]')
+        context.setshadowColor('rgb(166,157,145)')
+
     }
     function handleClickTheme3(){
         setButtonIndex(3);
         context.bgColor('rgb(22, 6, 40)');
-        context.textColorHandler(' rgb(255, 229, 61)');
+        context.textColorHandler('rgb(255, 229, 61)');
         context.dispColor('hsl(268, 71%, 12%)');
         context.tglkbdbgHandler('hsl(268, 71%, 12%)');
+        context.setKbdbgColor('bg-[rgb(88,7,125)]');
+        context.setKbdkeytextColor('text-[rgb(255,229,61)]')
+        context.setshadowColor('rgb(188,21,244)')
     }
 
     return(

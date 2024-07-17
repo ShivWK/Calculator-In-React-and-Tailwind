@@ -6,7 +6,13 @@ const ColorContext = React.createContext({
     textColor : null,
     dispColor : undefined,
     tglkbdbg : null,
-    tglkbdbgHandler : undefined
+    tglkbdbgHandler : undefined,
+    kbdbgColor: null,
+    setKbdbgColor: undefined,
+    KbdkeytextColor : null,
+    setKbdkeytextColor : undefined,
+    shadowColor : null,
+    setshadowColor : undefined
 })
 
 export default ColorContext
