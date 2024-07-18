@@ -14,7 +14,12 @@ export default function ModeBtnBox(){
         context.tglkbdbgHandler('hsl(223, 31%, 20%)');
         context.setKbdbgColor('bg-[rgb(234,227,220)]');
         context.setKbdkeytextColor('text-[rgb(53,53,44)]')
-        context.setshadowColor('rgb(180,165,151)')
+        context.setshadowColor('rgb(180,165,151)'),
+        context.setDelReBackColor('bg-[rgb(99,112,151)]');
+        context.setequalColor('text-white');
+        context.setEqualBgColor('bg-[rgb(208,63,47)]');
+        context.setDelReShadowColor('rgb(64,78,114)')
+        context.setEqualShadowColor('rgb(147,38,26)')
     }
     function handleClickTheme2(){
         setButtonIndex(2);
@@ -25,7 +30,11 @@ export default function ModeBtnBox(){
         context.setKbdbgColor('bg-[rgb(234,227,220)]');
         context.setKbdkeytextColor('text-[rgb(53,53,44)]')
         context.setshadowColor('rgb(166,157,145)')
-
+        context.setDelReBackColor('bg-[rgb(55,127,134)]');
+        context.setequalColor('text-white');
+        context.setEqualBgColor('bg-[rgb(202,85,2)]')
+        context.setDelReShadowColor('rgb(27,95,101)')
+        context.setEqualShadowColor('rgb(137,57,1)')
     }
     function handleClickTheme3(){
         setButtonIndex(3);
@@ -36,6 +45,11 @@ export default function ModeBtnBox(){
         context.setKbdbgColor('bg-[rgb(88,7,125)]');
         context.setKbdkeytextColor('text-[rgb(255,229,61)]')
         context.setshadowColor('rgb(188,21,244)')
+        context.setDelReBackColor('bg-[rgb(52,28,79)]');
+        context.setequalColor('text-black');
+        context.setEqualBgColor('bg-[rgb(0,224,209)]')
+        context.setDelReShadowColor('rgb(135,28,156)')
+      context.setEqualShadowColor('rgb(108,249,242)')
     }
 
     return(

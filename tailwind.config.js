@@ -10,8 +10,8 @@ export default {
         mine : "'League Spartan', sans-serif",
       },
       boxShadow: {
-        "sharp-shadow" : "0 6px 0 0 rgb(180,165,151)"
-      }
+        'custom': '0 6px 0 0 var(--tw-shadow-color)',
+      },
     },
   },
   plugins: [],

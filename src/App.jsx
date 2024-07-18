@@ -11,8 +11,12 @@ export default function () {
   let [tglkbdbg, setTglKbdBg] = useState('hsl(223, 31%, 20%)');
   let [kbdbgColor, setKbdBgColor] = useState('bg-[rgb(234,227,220)]');
   let [KbdkeytextColor , setKbdkeytextColor] = useState('text-[rgb(53,53,44)]');
-  let [shadowColor , setShadowColor] = useState('rgb(180,165,151)')
-
+  let [shadowColor , setShadowColor] = useState('rgb(180,165,151)');
+  let [delreBackCOlor, setDelReBackColor] = useState('bg-[rgb(99,112,151)]');
+  let [equalColor, setEqualColor] = useState('text-white');
+  let [equalBgColor, setEqualBgColor] = useState('bg-[rgb(208,63,47)]');
+  let [delreShadowColor, setDelReShadowColor] = useState('rgb(64,78,114)');
+  let [equalShadowColor, setEqualShadowColor] = useState('rgb(147,38,26)');
   
   const textColorHandler = (clr) => {
     setTextColor(clr);
@@ -35,7 +39,17 @@ export default function () {
         KbdkeytextColor : KbdkeytextColor,
         setKbdkeytextColor : setKbdkeytextColor,
         shadowColor : shadowColor,
-        setshadowColor : setShadowColor
+        setshadowColor : setShadowColor,
+        delreBackCOlor : delreBackCOlor,
+        setDelReBackColor: setDelReBackColor,
+        equalColor : equalColor,
+        setequalColor: setEqualColor,
+        equalBgColor : equalBgColor,
+        setEqualBgColor : setEqualBgColor,
+        delreShadowColor : delreShadowColor,
+        setDelReShadowColor : setDelReShadowColor,
+        equalShadowColor : equalShadowColor,
+        setEqualShadowColor : setEqualShadowColor
       }}>
     <div className='main w-full h-screen' style={{backgroundColor : bgColor}}>
 
