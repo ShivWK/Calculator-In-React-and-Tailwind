@@ -23,9 +23,9 @@ export default function Keybord() {
             <KBDButtons customClass={'width-4-5-rem'}>8</KBDButtons>
             <KBDButtons customClass={'width-4-5-rem'}>9</KBDButtons>
             <KBDButtons customClass={'width-4-5-rem'}>-</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>.</KBDButtons>
             <KBDButtons customClass={'width-4-5-rem'}>1</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>1</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>1</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>/</KBDButtons>
             <KBDButtons customClass={'width-4-5-rem'}>x</KBDButtons> 
             {/* <KBDButtons customClass={'width-9-5-rem'}>RESET</KBDButtons> */}
 
