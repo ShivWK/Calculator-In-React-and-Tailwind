@@ -60,7 +60,7 @@ export default function () {
         <CalDisplay dispColor={dispColor}/>
         <Keybord/>
       </div>
-      <h3 className='text-gray-400 mx-auto absolute italic top-[85%] md:top-[95%] left-[50%] -translate-x-[50%]'>By Shivendra</h3>
+      <h3 className='text-gray-400 mx-auto absolute italic top-[88%] md:top-[95%] left-[50%] -translate-x-[50%]'>By Shivendra</h3>
     </div>
     
     </ColorContext.Provider>
