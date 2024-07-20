@@ -38,29 +38,20 @@ export default function () {
         setInputData(inputData.concat(value));  
         break;
 
-      case value == "+":
-        if(inputData !== '') setExpression(inputData);
-        setExpression(expression.concat('+'));
-        setInputData('');
-        break; 
-        
+      case value == "+":    
       case value == '-':
-        if(inputData !== '') setExpression(inputData);
-        setExpression(expression.concat('-'));
-        setInputData('');
-        break;
-
-      case value == '*':
-        if(inputData !== '') setExpression(inputData);
-        setExpression(expression.concat('*'));
-        setInputData('');
-        break;
-          
+      case value == '*':    
       case value == '/':
-        if(inputData !== '') setExpression(inputData);
-        setExpression(expression.concat('/'));
-        setInputData('');
+        if(inputData !== '' && expression == ''){
+          setExpression(expression.concat(inputData, value));
+          setInputData('');
+        }else{
+          setExpression(expression.concat(value));
+          setInputData('');
+        }
+        
         break;
+        
 
       case value == 'del':
           setExpression(expression.slice(0, -1)); //we are giving value from 0th index to n-2th index excluding the last one
@@ -85,14 +76,6 @@ export default function () {
        default :
           console.log('Undefined Entry');
     }
-
-
-    if(!isNaN(value)){
-    setExpression(expression.concat(e.target.value)); 
-    setInputData(inputData.concat(e.target.value));  
-    }
-
-    // if(value == )
 
   }
   //setInputData('')
