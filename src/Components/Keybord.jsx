@@ -5,35 +5,29 @@ import ExtraButtons from './ExtraButtons/ExtraButtons';
 
 export default function Keybord() {
     let context = useContext(ColorContext);
-    console.log(context.equalShadowColor);
     return (
         <div className='w-fit h-fit rounded-lg flex flex-wrap p-5  md:gap-[0.97rem]  gap-[1rem]' style={{backgroundColor : context.tglkbdbg, }}>   
-            <KBDButtons customClass={'width-4-5-rem'}>7</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>8</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>9</KBDButtons>
-            {/* <KBDButtons customClass={'width-4-5-rem'}>DEL</KBDButtons> */}
+            <KBDButtons Value={'7'}>7</KBDButtons>
+            <KBDButtons Value={'8'}>8</KBDButtons>
+            <KBDButtons Value={'9'}>9</KBDButtons>
+            <ExtraButtons Value={'del'} customClass={'width-4-5-rem'} backColor={context.delreBackCOlor} Color={'text-white'} extraShadowColor={context.delreShadowColor}>DEL</ExtraButtons>
+            <KBDButtons Value={'4'}>4</KBDButtons>
+            <KBDButtons Value={'5'}>5</KBDButtons>
+            <KBDButtons Value={'6'}>6</KBDButtons>
+            <KBDButtons Value={'+'}>+</KBDButtons>
+            <KBDButtons Value={'1'}>1</KBDButtons>
+            <KBDButtons Value={'2'}>2</KBDButtons>
+            <KBDButtons Value={'3'}>3</KBDButtons>
+            <KBDButtons Value={'-'}>-</KBDButtons>
+            <KBDButtons Value={'.'}>.</KBDButtons>
+            <KBDButtons Value={'0'}>0</KBDButtons>
+            <KBDButtons Value={'/'}>/</KBDButtons>
+            <KBDButtons Value={'*'}>x</KBDButtons> 
+            <ExtraButtons Value={'reset'} customClass={'width-9-5-rem'} backColor={context.delreBackCOlor} Color={'text-white'} extraShadowColor={context.delreShadowColor}>RESET</ExtraButtons>
+            <ExtraButtons Value={'='} customClass={'width-9-5-rem'} backColor={context.equalBgColor} Color={context.equalColor} extraShadowColor={context.equalShadowColor}>=</ExtraButtons>
 
-            <ExtraButtons customClass={'width-4-5-rem'} backColor={context.delreBackCOlor} Color={'text-white'} extraShadowColor={context.delreShadowColor}>DEL</ExtraButtons>
+{/* MULTIPLE TIMES we are using the same component again and again this is redundent we can use an array and map function to improve readability  */}
 
-            <KBDButtons customClass={'width-4-5-rem'}>4</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>5</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>6</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>+</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>1</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>2</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>3</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>-</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>.</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>0</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>/</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>x</KBDButtons> 
-            {/* <KBDButtons customClass={'width-9-5-rem'}>RESET</KBDButtons> */}
-
-            <ExtraButtons customClass={'width-9-5-rem'} backColor={context.delreBackCOlor} Color={'text-white'} extraShadowColor={context.delreShadowColor}>RESET</ExtraButtons>
-
-            <ExtraButtons customClass={'width-9-5-rem'} backColor={context.equalBgColor} Color={context.equalColor} extraShadowColor={context.equalShadowColor}>=</ExtraButtons>
-
-            {/* <KBDButtons customClass={'width-9-5-rem'}>=</KBDButtons> */}
         </div>
     )
   

@@ -22,7 +22,9 @@ const ColorContext = React.createContext({
     delreShadowColor : null,
     setDelReShadowColor : undefined,
     equalShadowColor : null,
-    setEqualShadowColor : undefined
+    setEqualShadowColor : undefined,
+    ClickHandler : undefined,
+    equalHandler : undefined
 })
 
 export default ColorContext
