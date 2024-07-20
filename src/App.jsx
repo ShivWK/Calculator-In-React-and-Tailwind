@@ -59,10 +59,13 @@ export default function () {
         <CalHeader backgroundclr={bgcolorhandler}/>
         <CalDisplay dispColor={dispColor}/>
         <Keybord/>
+        <h3 className='text-gray-400 mt-6 text-center italic '>By Shivendra</h3>
       </div>
-      <h3 className='text-gray-400 mx-auto absolute italic top-[88%] md:top-[95%] left-[50%] -translate-x-[50%]'>By Shivendra</h3>
+      
     </div>
     
     </ColorContext.Provider>
   )
 } 
+
+// top-[88%] md:top-[95%] left-[50%] -translate-x-[50%] absolute

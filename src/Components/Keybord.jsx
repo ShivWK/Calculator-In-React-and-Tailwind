@@ -7,10 +7,10 @@ export default function Keybord() {
     let context = useContext(ColorContext);
     console.log(context.equalShadowColor);
     return (
-        <div className='w-full h-fit rounded-lg flex flex-wrap p-5  md:gap-[0.97rem]  gap-[1rem]' style={{backgroundColor : context.tglkbdbg, }}>   
-            <KBDButtons customClass={'width-4-5-rem'}>1</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>2</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>3</KBDButtons>
+        <div className='w-fit h-fit rounded-lg flex flex-wrap p-5  md:gap-[0.97rem]  gap-[1rem]' style={{backgroundColor : context.tglkbdbg, }}>   
+            <KBDButtons customClass={'width-4-5-rem'}>7</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>8</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>9</KBDButtons>
             {/* <KBDButtons customClass={'width-4-5-rem'}>DEL</KBDButtons> */}
 
             <ExtraButtons customClass={'width-4-5-rem'} backColor={context.delreBackCOlor} Color={'text-white'} extraShadowColor={context.delreShadowColor}>DEL</ExtraButtons>
@@ -19,12 +19,12 @@ export default function Keybord() {
             <KBDButtons customClass={'width-4-5-rem'}>5</KBDButtons>
             <KBDButtons customClass={'width-4-5-rem'}>6</KBDButtons>
             <KBDButtons customClass={'width-4-5-rem'}>+</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>7</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>8</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>9</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>1</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>2</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>3</KBDButtons>
             <KBDButtons customClass={'width-4-5-rem'}>-</KBDButtons>
             <KBDButtons customClass={'width-4-5-rem'}>.</KBDButtons>
-            <KBDButtons customClass={'width-4-5-rem'}>1</KBDButtons>
+            <KBDButtons customClass={'width-4-5-rem'}>0</KBDButtons>
             <KBDButtons customClass={'width-4-5-rem'}>/</KBDButtons>
             <KBDButtons customClass={'width-4-5-rem'}>x</KBDButtons> 
             {/* <KBDButtons customClass={'width-9-5-rem'}>RESET</KBDButtons> */}
