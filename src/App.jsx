@@ -64,13 +64,15 @@ export default function () {
         break;
 
       case value == '=':
-        try {
-          setInputData(String(eval(expression)));
-          setExpression('');
-        } catch (error) {
-          setInputData('Error');
-          setExpression('');
-        }
+        if(expression !== ''){
+          try {
+            setInputData(String(eval(expression)));
+            setExpression('');
+          } catch (error) {
+            setInputData('Error');
+            setExpression('');
+          }
+        }     
         break;
 
       default:
