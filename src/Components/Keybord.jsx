@@ -6,8 +6,8 @@ import ExtraButtons from './ExtraButtons/ExtraButtons';
 export default function Keybord() {
     let context = useContext(ColorContext);
     return (
-        <div className='w-fit h-fit rounded-lg flex p-6 md:p-3 items-center justify-center ' style={{backgroundColor : context.tglkbdbg, }}>  
-            <div className='w-fit flex flex-wrap md:gap-x-[0.75rem] md:gap-y-[0.82rem] gap-[0.8rem]'>
+        <div className='w-fit h-fit rounded-lg flex p-6 md:p-5 items-center justify-center ' style={{backgroundColor : context.tglkbdbg, }}>  
+            <div className='w-fit flex flex-wrap md:gap-x-[0.75rem] md:gap-y-[0.82rem] gap-x-[0.8rem] gap-y-[0.9rem] sm:gap-x-[0.2rem] sm:gap-y-[0.9rem] '>
             <KBDButtons Value={'7'}>7</KBDButtons>
             <KBDButtons Value={'8'}>8</KBDButtons>
             <KBDButtons Value={'9'}>9</KBDButtons>
