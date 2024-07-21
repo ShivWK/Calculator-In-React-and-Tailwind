@@ -18,10 +18,10 @@ export default function Keybord() {
             <KBDButtons Value={'1'}>1</KBDButtons>
             <KBDButtons Value={'2'}>2</KBDButtons>
             <KBDButtons Value={'3'}>3</KBDButtons>
-            <KBDButtons Value={'-'}>-</KBDButtons>
+            <KBDButtons Value={'-'}>−</KBDButtons>
             <KBDButtons Value={'.'}>.</KBDButtons>
             <KBDButtons Value={'0'}>0</KBDButtons>
-            <KBDButtons Value={'/'}>/</KBDButtons>
+            <KBDButtons Value={'/'}>÷</KBDButtons>
             <KBDButtons Value={'*'}>x</KBDButtons> 
             <ExtraButtons Value={'reset'} customClass={'width-9-5-rem'} backColor={context.delreBackCOlor} Color={'text-white'} extraShadowColor={context.delreShadowColor}>RESET</ExtraButtons>
             <ExtraButtons Value={'='} customClass={'width-9-5-rem'} backColor={context.equalBgColor} Color={context.equalColor} extraShadowColor={context.equalShadowColor}>=</ExtraButtons>
