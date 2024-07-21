@@ -6,7 +6,8 @@ import ExtraButtons from './ExtraButtons/ExtraButtons';
 export default function Keybord() {
     let context = useContext(ColorContext);
     return (
-        <div className='w-fit h-fit rounded-lg flex flex-wrap p-5  md:gap-[0.97rem]  gap-[1rem]' style={{backgroundColor : context.tglkbdbg, }}>   
+        <div className='w-fit h-fit rounded-lg flex p-5 md:p-3 items-center justify-center ' style={{backgroundColor : context.tglkbdbg, }}>  
+            <div className='w-fit flex flex-wrap md:gap-x-[0.55rem] md:gap-y-[0.62rem] gap-[1.2rem]'>
             <KBDButtons Value={'7'}>7</KBDButtons>
             <KBDButtons Value={'8'}>8</KBDButtons>
             <KBDButtons Value={'9'}>9</KBDButtons>
@@ -25,6 +26,8 @@ export default function Keybord() {
             <KBDButtons Value={'*'}>x</KBDButtons> 
             <ExtraButtons Value={'reset'} customClass={'width-9-5-rem'} backColor={context.delreBackCOlor} Color={'text-white'} extraShadowColor={context.delreShadowColor}>RESET</ExtraButtons>
             <ExtraButtons Value={'='} customClass={'width-9-5-rem'} backColor={context.equalBgColor} Color={context.equalColor} extraShadowColor={context.equalShadowColor}>=</ExtraButtons>
+            </div> 
+            
 
 {/* MULTIPLE TIMES we are using the same component again and again this is redundent we can use an array and map function to improve readability  */}
 
