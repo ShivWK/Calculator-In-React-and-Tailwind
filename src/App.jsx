@@ -119,11 +119,11 @@ export default function () {
 
         {/* The issue with your code is in the way you are trying to use the bgColor state variable within the className attribute of the div. Tailwind CSS does not support dynamic class names directly within the template string. Instead, you should apply the background color style inline using the style attribute. */}
 
-        <div className="absolute top-[50%] left-[50%] -translate-x-[50%] md:-translate-y-[53%] -translate-y-[51%] px-2 py-2 md:w-[24%] w-11/12  h-5/6 rounded-lg">
+        <div className="absolute top-[50%] left-[50%] -translate-x-[50%] md:-translate-y-[53%] -translate-y-[51%] p-2  md:w-[30%] sm:w-9/12 w-10/12  h-5/6 rounded-lg">
           <CalHeader backgroundclr={bgcolorhandler} />
           <CalDisplay expValue={expression} inputValue={inputData} dispColor={dispColor} />
           <Keybord />
-          <h3 className='text-gray-400 mt-9 md:mt-6 text-center italic '>By Shivendra</h3>
+          <h3 className='text-gray-400 mt-10 text-center italic '>By Shivendra</h3>
         </div>
 
       </div>
