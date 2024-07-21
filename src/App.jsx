@@ -121,7 +121,7 @@ export default function () {
           <CalHeader backgroundclr={bgcolorhandler} />
           <CalDisplay expValue={expression} inputValue={inputData} dispColor={dispColor} />
           <Keybord />
-          <h3 className='text-gray-400 mt-8 md:mt-6 text-center italic '>By Shivendra</h3>
+          <h3 className='text-gray-400 mt-9 md:mt-6 text-center italic '>By Shivendra</h3>
         </div>
 
       </div>
