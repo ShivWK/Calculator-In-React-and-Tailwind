@@ -29,12 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./screenshot.jpg)
+![Screenshot](./src/assets/Screenshot%20(118).png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/calculator-app-using-reactjs-and-tailwindcss)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [reactcalcultor.netlify.app](https://reactcalcultor.netlify.app/)
 
 ## My process
 

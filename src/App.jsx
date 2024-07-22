@@ -54,7 +54,7 @@ export default function () {
         break;
 
       case value == 'del':
-        setExpression(expression.slice(0, -1)); //we are giving value from 0th index to n-2th index excluding the last one
+        setExpression(expression.slice(0, -1));
         setInputData(inputData.slice(0, -1));
         break;
 
@@ -64,7 +64,7 @@ export default function () {
         break;
 
       case value == '=':
-        if(expression !== ''){
+        if (expression !== '') {
           try {
             setInputData(String(eval(expression)));
             setExpression('');
@@ -72,7 +72,7 @@ export default function () {
             setInputData('Error');
             setExpression('');
           }
-        }     
+        }
         break;
 
       default:
@@ -80,7 +80,6 @@ export default function () {
     }
 
   }
-  //setInputData('')
 
   const equalHandler = () => {
     setInputData(eval(expression));
@@ -117,8 +116,6 @@ export default function () {
       }}>
       <div className='main w-full h-screen' style={{ backgroundColor: bgColor }}>
 
-        {/* The issue with your code is in the way you are trying to use the bgColor state variable within the className attribute of the div. Tailwind CSS does not support dynamic class names directly within the template string. Instead, you should apply the background color style inline using the style attribute. */}
-
         <div className="absolute top-[50%] left-[50%] -translate-x-[50%] md:-translate-y-[53%] -translate-y-[50%] p-2  md:w-[29%] w-10/12  h-5/6 rounded-lg">
           <CalHeader backgroundclr={bgcolorhandler} />
           <CalDisplay expValue={expression} inputValue={inputData} dispColor={dispColor} />
@@ -127,11 +124,8 @@ export default function () {
         </div>
 
       </div>
-
     </ColorContext.Provider>
 
   )
 
 }
-
-// top-[88%] md:top-[95%] left-[50%] -translate-x-[50%] absolute
