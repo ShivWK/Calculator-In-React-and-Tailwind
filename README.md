@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/calculator-app-using-reactjs-and-tailwindcss)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/frontend-mentor---calculator-app-solution-BZOMvJBavY)
 - Live Site URL: [reactcalcultor.netlify.app](https://reactcalcultor.netlify.app/)
 
 ## My process
